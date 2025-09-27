@@ -1,8 +1,7 @@
-FROM openjdk:17-jdk-alpine
+FROM openjdk:21-jdk-slim
 
 WORKDIR /app
 
-# Copy your built jar
 COPY target/sacredsikkimapi-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
